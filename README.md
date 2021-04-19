@@ -1,0 +1,1 @@
+# The delicious frontend for HeyBuddy. Authored by Jefferson and Josiah. Its going to be lit, don't sleep on greatness
