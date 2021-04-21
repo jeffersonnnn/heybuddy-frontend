@@ -1,10 +1,11 @@
 import React from "react";
 import Input from "./Input";
 import Button from "./Button";
+import Link from "next/link";
 
 const LandingMain = () => {
   return (
-    <div className="pt-32">
+    <div className="pt-12">
       <h1 className="text-2xl pb-6 text-center font-bold font-lora primary-gradient">
         Be the best buddy to <br />
         your significant other(s) and ‘friends’.
@@ -20,10 +21,15 @@ const LandingMain = () => {
       </small>
       <div className="flex justify-center items-center">
         <Input
+          type={"text"}
           customClass={"w-96 mr-3"}
           placeholder={"Enter your email address"}
         />
-        <Button customClass={"w-48"}>Sign me up</Button>
+        <Link href="/signup">
+          <a>
+            <Button customClass={"w-48"}>Sign me up</Button>
+          </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,8 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 const HeaderMain = () => {
   return (
-    <header className="pt-12 text-red text-lg font-shippori">heybuddy</header>
+    <Link href="/">
+      <a>
+        <header className="pt-12 pb-20 text-red text-lg font-shippori">
+          heybuddy
+        </header>
+      </a>
+    </Link>
   );
 };
 
