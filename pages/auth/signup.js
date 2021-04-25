@@ -1,7 +1,8 @@
 import React from "react";
-import HeaderMain from "../components/HeaderMain";
-import Input from "../components/Input";
-import Button from "../components/Button";
+import Link from "next/link";
+import HeaderMain from "../../components/HeaderMain";
+import Input from "../../components/Input";
+import Button from "../../components/Button";
 
 const signup = () => {
   return (
@@ -12,7 +13,7 @@ const signup = () => {
           Create account
         </h1>
         <form>
-          <div className="flex mb-6">
+          <div className="flex mb-6 phone2x:block justify-between">
             <Input
               type={"text"}
               label={"First name"}
@@ -33,6 +34,18 @@ const signup = () => {
           />
           <Button customClass={"w-full mt-4"}>Proceed</Button>
         </form>
+        <div className="text-center mt-12">
+          <span className="font-workSans text-base pr-1">
+            Already have an account?
+          </span>
+          <span>
+            <Link href="/auth/signin">
+              <a className="font-workSans text-base text-red font-bold">
+                Sign in here
+              </a>
+            </Link>
+          </span>
+        </div>
       </div>
     </section>
   );

@@ -2,6 +2,16 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      phone: { max: "320px" },
+      phone2x: { max: "480px" },
+      phone3x: { max: "768px" },
+      tablet: { max: "912px" },
+      tablet2x: { max: "1024px" },
+      desktop: { max: "1200px" },
+      desktop2x: { max: "1440px" },
+      desktop3x: { max: "1680px" },
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",

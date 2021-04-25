@@ -10,7 +10,9 @@ const Input = ({
   const [value, setValue] = useState("");
   return (
     <div className={`form-field ${formFieldClass}`}>
-      <label className="text-grey2 font-semibold">{label}</label>
+      <label className="font-workSans font-bold text-base text-grey2">
+        {label}
+      </label>
       <input
         type={type}
         placeholder={placeholder}
