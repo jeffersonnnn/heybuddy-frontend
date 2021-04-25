@@ -1,5 +1,4 @@
 import Head from "next/head";
-import HeaderMain from "../components/HeaderMain";
 import LandingMain from "../components/LandingMain";
 
 export default function Home() {
@@ -9,10 +8,7 @@ export default function Home() {
         <title>Hey Buddy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="page">
-        <HeaderMain />
-        <LandingMain />
-      </main>
+      <LandingMain />
     </section>
   );
 }
