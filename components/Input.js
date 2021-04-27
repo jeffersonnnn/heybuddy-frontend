@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
-const Input = ({
-  formFieldClass = "",
-  type,
-  customClass,
-  label,
-  placeholder,
-}) => {
+const Input = ({ formFieldClass, type, customClass, label, placeholder }) => {
   const [value, setValue] = useState("");
   return (
     <div className={`form-field ${formFieldClass}`}>

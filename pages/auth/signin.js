@@ -24,7 +24,7 @@ const signin = () => {
             type={"password"}
             customClass={"w-full mb-5"}
           />
-          <Link href="#">
+          <Link href="/auth/forgotPassword">
             <a className="font-workSans text-base text-red font-bold text-right block">
               Forgot your password?
             </a>
@@ -36,9 +36,9 @@ const signin = () => {
             Are you new here?
           </span>
           <span>
-            <Link href="auth/signin">
+            <Link href="/auth/signup">
               <a className="font-workSans text-base text-red font-bold">
-                Sign in here
+                Sign up here
               </a>
             </Link>
           </span>
